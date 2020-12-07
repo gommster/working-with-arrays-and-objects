@@ -22,10 +22,10 @@ var carDetails = {
 */
 
 //Code Here
-let color = carDetails.color;
-let make = carDetails.make;
-let model = carDetails.model;
-let year = carDetails.year;
+let {color} = carDetails;
+let {make} = carDetails;
+let {model} = carDetails;
+let {year} = carDetails;
 
 ////////// PROBLEM 2 //////////
 
@@ -37,9 +37,9 @@ let year = carDetails.year;
 
 function greeting( obj ) {
   //Code Here
-  let title = obj.title;
-  let firstName = obj.firstName;
-  let lastName = obj.lastName;
+  let {title} = obj;
+  let {firstName} = obj;
+  let {lastName} = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -59,10 +59,10 @@ function greeting( obj ) {
 
 //Code Here
 function totalPopulation (obj3) {
-  let utah = obj3.utah;
-  let california = obj3.california;
-  let texas = obj3.texas;
-  let arizona = obj3.arizona;
+  let {utah} = obj3;
+  let {california} = obj3;
+  let {texas} = obj3;
+  let {arizona} = obj3;
 
   return utah + california + texas + arizona;
 }
@@ -80,9 +80,9 @@ function totalPopulation (obj3) {
 
 //Code Here
 function ingredients (obj4) {
-  let carb = obj4.carb;
-  let fat = obj4.fat;
-  let protein = obj4.protein;
+  let {carb} = obj4;
+  let {fat} = obj4;
+  let {protein} = obj4;
   return [carb, fat, protein];
 }
 
